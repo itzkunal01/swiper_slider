@@ -1,0 +1,5 @@
+.swiper-slide {
+  width: 100% !important;
+  min-height: 92vh;
+  z-index: 5;
+}
