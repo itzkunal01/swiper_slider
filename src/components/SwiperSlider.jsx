@@ -43,7 +43,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 //
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation, Mousewheel } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -55,6 +55,9 @@ const SwiperSlider = () => {
         <Swiper
           spaceBetween={70}
           slidesPerView={1}
+          //
+          mousewheel={true}
+          //
           centeredSlides={true}
           autoplay={{
             delay: 1000,
@@ -65,7 +68,7 @@ const SwiperSlider = () => {
             clickable: true,
           }}
           navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Pagination, Navigation, Mousewheel]}
           className="mySwiper"
         >
           <SwiperSlide className="bg-danger d-flex align-items-center justify-content-center px-3">
